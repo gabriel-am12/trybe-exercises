@@ -1,0 +1,39 @@
+body{
+    font-size: 16px;
+    font-style: oblique;
+}
+
+h1{
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif, monospace;
+}
+
+p{
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+}
+
+ul{
+    background-color: palegoldenrod;
+    font-size: 2em;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#red{
+    background-color: red;
+}
+
+#brown{
+    background-color: brown;
+}
+
+.p_ul_style{
+    background-color: palegreen;
+    text-decoration: underline black;
+    line-height: 80px;
+}
