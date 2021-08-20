@@ -1,0 +1,62 @@
+
+ol li {
+    background-color: yellow;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.first{
+    color: blue;
+
+}
+
+.first.word_java{
+    color: pink;
+}
+
+.even_item{
+    color: green;
+}
+
+.odd_item{
+    text-transform: uppercase;
+}
+
+h1,h2,h3 {
+    color: red;
+}
+
+.italic_h{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+a:hover#stackoverflow_color{
+    color: orange;
+}
+
+a:hover#w3schools_color{
+    color: green;
+}
+
+a:hover#mdn_color{
+    color: black;
+}
+
+a:hover#devdocs_color{
+    color: yellow;
+}
+
+a:hover#trybe_color{
+    color: green;
+}
