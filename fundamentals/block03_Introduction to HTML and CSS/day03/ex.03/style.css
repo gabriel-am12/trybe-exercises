@@ -1,0 +1,25 @@
+* {
+    margin: 10px;
+    padding: 0;
+}
+
+h1,p{
+    text-align: center;
+}
+
+ol,ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+
+ol li:hover ,ul li:hover{
+    background-color: blanchedalmond;
+    
+}
+
+ol li:active, ul li:active{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
