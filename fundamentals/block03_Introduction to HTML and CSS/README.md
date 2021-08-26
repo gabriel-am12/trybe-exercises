@@ -40,3 +40,6 @@ Part 2\
 3 - Make all `li`'s be 20px font size, and for all italicized text within a li, use the `font-weight` property to make it bold.\
 4 - In the listing of programming languages, make the first 3 in the list have a blue font color and, if any have "java*" in the text, use a pink background color.\
 5 - (Bonus) For each link in the developer person's list of allies, make the mouse over each one and make the text bold and assume the "site theme" font color.
+
+### Day 04 - Semantic HTML
+
