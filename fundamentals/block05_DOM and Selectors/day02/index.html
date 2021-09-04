@@ -57,6 +57,7 @@
   </head>
   <body>
     <script>
+      //First Part
       //1
       let body = document.querySelector('body');
       let h1 = document.createElement('h1');
@@ -74,6 +75,49 @@
       let p = document.createElement('p');
       p.innerText = 'Lorem Ipsum';
       section.appendChild(p);
+      //5
+      let sectionLeftContent = document.createElement('section');
+      sectionLeftContent.className = 'left-content';
+      main.appendChild(sectionLeftContent);
+      //6
+      let sectionRightContent = document.createElement('section');
+      sectionRightContent.className = 'right-content';
+      main.appendChild(sectionRightContent);
+      //7
+      let img = document.createElement('img');
+      img.src = 'https://picsum.photos/200';
+      img.className = 'small-image';
+      sectionLeftContent.appendChild(img);
+      //8
+      let numberList = [
+          'um',
+          'dois',
+          'três',
+          'quatro',
+          'cinco',
+          'seis',
+          'sete',
+          'oito',
+          'nove',
+          'dez'
+      ];
+      let ul = document.createElement('ul');
+      for (let index = 0; index < numberList.length; index += 1) {
+          let number = numberList[index];
+          let li = document.createElement('li');
+          li.innerText = number;
+
+          ul.appendChild(li);
+      }
+      sectionRightContent.appendChild(ul);
+      //9
+      let h3_01 = document.createElement('h3');
+      let h3_02 = document.createElement('h3');
+      let h3_03 = document.createElement('h3');
+      main.append(h3_01, h3_02, h3_03);
+      //Second Part
+      //1
+      h1.className = 'title';
     </script>
   </body>
 </html>
