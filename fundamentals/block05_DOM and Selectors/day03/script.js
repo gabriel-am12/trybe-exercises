@@ -61,7 +61,7 @@ function changeHolidaysBC() {
     let stdColor = 'white';
 
     getHolidayButtonId.addEventListener('click',function() {
-        for(let index = 0; index < getHolidaysClass.length; index += 1) {
+        for (let index = 0; index < getHolidaysClass.length; index += 1) {
             if(getHolidaysClass[index].style.backgroundColor === stdColor) {
                 getHolidaysClass[index].style.backgroundColor = newBackgroundColor;
             } else {
@@ -88,7 +88,7 @@ function changeFridaysBtn(array) {
     let newText = "Sexta-Feira";
 
     getFridayButtonId.addEventListener('click',function() {
-        for(let index = 0; index < getFridaysClass.length; index += 1) {
+        for (let index = 0; index < getFridaysClass.length; index += 1) {
             if (getFridaysClass[index].innerHTML !== newText) {
                 getFridaysClass[index].innerHTML = newText;
             } else {
@@ -135,3 +135,32 @@ function subtitleWithColor(string) {
     myTasksClass.appendChild(newDivOfTask);
 }
 subtitleWithColor('purple');
+//9
+function selectTask() {
+    const divOfTask = document.querySelector('.task');
+    const selectAnTask = document.getElementsByClassName('task selected');
+
+    divOfTask.addEventListener('click', function(event) {
+        if (selectAnTask.length === 0) {
+            event.target.className = 'task selected';
+        } else {
+            event.target.className = 'task';
+        }
+    })
+};
+selectTask();
+//10
+function addColorToDay() {
+    let days = document.querySelector('#days');
+    let selectedTask = document.getElementsByClassName('task selected');
+    let divOfTask = document.querySelector('.task');
+
+    days.addEventListener('click',function(event) {
+        if (selectedTask.length > 0 && event.target.style.color !== divOfTask.style.backgroundColor) {
+            event.target.style.color = selectedTask[0].style.backgroundColor;
+        } else if (event.target.style.color === divOfTask.style.backgroundColor && selectedTask.length !== 0) {
+            event.target.style.color = 'rgb(119,119,119)';
+        }
+    })
+};
+addColorToDay();
