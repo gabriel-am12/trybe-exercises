@@ -1,0 +1,34 @@
+body {
+    margin: 10px;
+}
+.userPreferences {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid green;
+}
+.preferences {
+    display: flex;
+    flex-direction: column;
+}
+.textTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textDescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+.textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+.prgph {
+    display: flex;
+}
