@@ -25,4 +25,15 @@ body {
     align-items: center;
 }
 
+@media screen and (max-width: 903px) {
+    article {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 703px) {
+    article {
+        max-width: 680px;
+    }
+}
 
