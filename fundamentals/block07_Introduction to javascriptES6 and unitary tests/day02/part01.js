@@ -1,3 +1,4 @@
+//ex.01
 const order = {
     name: 'Rafael Andrade',
     phoneNumber: '11-98763-1416',
@@ -52,6 +53,7 @@ const order = {
   
   customerInfo(order);
   
+  //ex.02
   const orderModifier = (order) => {
     // Adicione abaixo as informações necessárias.
     const newName = order['name'] = 'Luiz Silva';
@@ -66,10 +68,3 @@ const order = {
   }
   
   orderModifier(order);
-
-  //"Olá Ana Silveira, entrega para: Rafael Andrade, 
-  //Telefone: 11-98763-1416, 
-  //R. Rua das Flores, Nº: 389, AP: 701"
-
-  //"Olá Luiz Silva, o total do seu pedido de marguerita, 
-  //pepperoni e Coca-Cola Zero é R$ 50,00."
