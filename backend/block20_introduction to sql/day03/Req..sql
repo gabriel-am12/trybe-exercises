@@ -15,4 +15,8 @@ WHERE name LIKE '%LTDA'
 ORDER BY name DESC;
 -- ex.05
 SELECT COUNT(*) FROM Fornecedores
-WHERE code LIKE '%F%'; 
+WHERE code LIKE '%F%';
+-- ex.06
+SELECT * FROM Fornecimentos
+WHERE Preco BETWEEN 15.00 AND 40.00
+ORDER BY Preco;
