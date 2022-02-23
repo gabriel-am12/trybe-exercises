@@ -12,4 +12,7 @@ WHERE fornecedor LIKE '%N%';
 -- ex.04
 SELECT * FROM Fornecedores 
 WHERE name LIKE '%LTDA'
-ORDER BY name DESC
+ORDER BY name DESC;
+-- ex.05
+SELECT COUNT(*) FROM Fornecedores
+WHERE code LIKE '%F%'; 
