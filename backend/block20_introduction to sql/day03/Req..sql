@@ -9,3 +9,7 @@ ORDER BY Fornecedor;
 -- ex.03
 SELECT peca, Preco, fornecedor FROM Fornecimentos
 WHERE fornecedor LIKE '%N%'; 
+-- ex.04
+SELECT * FROM Fornecedores 
+WHERE name LIKE '%LTDA'
+ORDER BY name DESC
