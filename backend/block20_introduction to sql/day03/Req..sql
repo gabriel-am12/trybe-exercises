@@ -20,3 +20,6 @@ WHERE code LIKE '%F%';
 SELECT * FROM Fornecimentos
 WHERE Preco BETWEEN 15.00 AND 40.00
 ORDER BY Preco;
+-- ex.07
+SELECT COUNT(*) FROM Vendas
+WHERE DATE(order_date) BETWEEN '2018-04-15' AND '2019-07-30';
