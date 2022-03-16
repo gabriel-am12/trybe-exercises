@@ -39,4 +39,16 @@ describe('Execute verifyNumbSignal func', () => {
       });
     }); 
   });
+  describe("it's not a number", () => {
+    describe('the response: ', () => {
+      it("it's a string", () => {
+        const resp = verifyNumbSignal('test');
+        expect(resp).to.be.a('string');
+      });
+      it("it's equal 'must be a number'", () => {
+        const resp = verifyNumbSignal('test');
+        expect(resp).to.be.equals('must be a number');
+      });
+    });
+  });
 });
