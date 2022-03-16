@@ -9,6 +9,11 @@ app.get('/ping', (_req, res) => {
   res.json({"message": "pong" });
 });
 
+app.post('/hello', (req, res) => {
+  const { name } = req.body;
+  res.status(200).json({"message": `Hello, ${name}!`})
+});
+
 app.use(function(err, req, res, next ) {
   res.status(500).send(`Algo não está certo: ${err.message}`);
 });
