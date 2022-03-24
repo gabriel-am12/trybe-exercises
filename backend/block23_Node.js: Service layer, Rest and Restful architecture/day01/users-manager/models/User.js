@@ -14,3 +14,8 @@ function create({ firstName, lastName, email, password }) {
   return connection.execute(query, [firstName, lastName, email, password])
     .then(([result]) => ({ id: result.insertId, firstName, lastName, email }));
 }
+
+function findAll() {
+  return connection.execute('SELEECT * from users;')
+    .then(([results]) => results.map(formatUser));
+}

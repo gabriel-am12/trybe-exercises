@@ -1,6 +1,6 @@
 const rescue = require('express-rescue');
-const Joi = require('joi');
 const UserModel = require('../models/User');
+const Joi = require('joi');
 
 //using joi library for data validation
 const createUserSchema = Joi.object({
